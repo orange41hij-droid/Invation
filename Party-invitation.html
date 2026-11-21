@@ -32,7 +32,7 @@ text-transform: uppercase;
     border: none;
 background-color: rgba(0, 0, 0, 0.25);
 height: 1px;
-width: 210px;
+width: 220px;
 border-radius: 2px;
 }
 hr {
@@ -43,10 +43,80 @@ width: 140px;
 border-radius: 2px;
 }
 .Circle-pic {
-width: 200px;
-height: 200px;
+width: 210px;
+height: 210px;
 border-radius: 50%;
 object-fit: cover;
+}
+form {
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+    font-family: inherit;
+border: none;
+border-radius: 12px;
+padding: 11px;
+text-transform: uppercase;
+
+background-color: blanchedalmond;
+padding: 10px 15px;
+
+10px 15px
+25px 30px;
+}
+button:hover {
+
+cursor: pointer;
+}
+.new-line {
+        border: none;
+background-color: rgba(0, 0, 0, 0.25);
+height: 1px;
+width: 215px;
+border-radius: 2px;
+}
+.host{
+    font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
+    font-size: 40px;
+    text-transform: lowercase;
+    margin: 20px;
+
+}
+button {
+    color: #fffaf5;
+    font-weight: bold;
+    border-radius: 6px;
+    letter-spacing: 1.5px;
+    background-color: #8b1e24;
+    border: none;
+}
+select {
+    margin-bottom: 16px
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: inherit;
+       border: 1px solid black;
+       cursor: pointer;
+}
+input {
+    margin-bottom: 6px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid black;
+}
+h4 {
+    font-weight: bold;
+    font-family: inherit;
+    font-style: oblique;
+    font-size: 22px;
+}
+.RSVP {
+    margin-top: 30px;
+
+
 }
     </style>
     <body>
@@ -65,16 +135,18 @@ object-fit: cover;
 <div id="address-VENUE">
             <address><a href="https://www.kenmorecommunity.club/">7304 NE 175th St, Kenmore, WA 98028</a></address>
             </div>
+
             <div class="RSVP">
-<h4>RSVP BY MAY 1, 2027</h4>
-<form action="938ddafa-74a7-43f8-b5e9-bfb455732075" method="POST">
+<form action="https://api.web3forms.com/submit" method="POST">
+    <h4>RSVP BY MAY 1, 2027</h4>
     <label for="attending">WILL YOU BE ATTENDING?</label>
     <select id="attending" name="attending"><option value="yes">YES</option><option value="no">NO</option><option value="maybe?">MAYBE?</option></select>
        <label for="guest-name">FULL NAME</label>
-       <input type="hidden" name="access_key" value="938ddafa-74a7-43f8-b5e9-bfb455732075">
+      <input type="hidden" name="access_key" value="938ddafa-74a7-43f8-b5e9-bfb455732075">
     <input type="text" placeholder="EX:HERRERA FAMILY" id="guest-name" name="guest-name" required>
     <button type="submit">Send RSVP</button>
 </form>
+<p class="host">HOSTED BY THE HERERRA FAMILY</p>
             </div>
         </main>
     </body>
