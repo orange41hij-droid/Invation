@@ -5,22 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yaneli 18 nera</title>
     </head>
-    <style>
+    <style>/* background-color: rgba(183, 223, 250, 0.849); */
         body {
-            background-color: rgba(183, 223, 250, 0.849);
+            background-image: url("Blue-background.jpg");
             text-align: center;
         }
 h2 {
 font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
-font-size: 52px;
+font-size: 80px;
 font-weight: normal;
+margin-block: 0px;
 }
 
 h1 {
-   font-family: 'Didot', 'Bodoni MT', 'Palatino', serif;
-font-size: 24px;
+font-family: inherit;
+font-size: 50px;
 letter-spacing: 4px;
-text-transform: uppercase;
+margin-top: 45px;
  
 }
  address a {
@@ -32,7 +33,7 @@ text-transform: uppercase;
     border: none;
 background-color: rgba(0, 0, 0, 0.25);
 height: 1px;
-width: 220px;
+width: 270px;
 border-radius: 2px;
 }
 hr {
@@ -43,8 +44,8 @@ width: 140px;
 border-radius: 2px;
 }
 .Circle-pic {
-width: 210px;
-height: 210px;
+width: 450px;
+height: 450px;
 border-radius: 50%;
 object-fit: cover;
 }
@@ -52,7 +53,7 @@ form {
     gap: 9px;
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    max-width: 340px;
     margin: 0 auto;
     font-family: inherit;
 border: none;
@@ -78,9 +79,9 @@ width: 215px;
 border-radius: 2px;
 }
 .host{
-    font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
+    font-family:'Snell Roundhand';
     font-size: 40px;
-    text-transform: lowercase;
+    text-transform: uppercase;
     margin: 20px;
 
 }
@@ -118,26 +119,102 @@ h4 {
 
 
 }
+i {
+    font-size: 80px;
+}
+h3 {
+    margin-top: 20px;
+    font-size: 95px;
+}
+time {
+    font-size: 50px;
+}
+address {
+    font-size: 50px;
+}
+iframe {
+    margin-left: 1300px;
+}
+p {
+    margin-top: -50px;
+}
+.hr-2 {
+width: 300px;
+}
+.timer {
+    font-size: 500px;
+}
+main {
+    color: white;
+}
     </style>
     <body>
         <main class="invite-card">
             <h1>YOU ARE INVITED TO CELEBRATE THE 18TH BIRTHDAY OF</h1>
-            <img src="yaya Bday pic profile.jpg" alt="Birthday-girl-pic" class="Circle-pic">
+            <img src="Moon-Dress.jpg" alt="Birthday-girl-pic" class="Circle-pic">
             <h2>*Yaneli Perez Herrera Blanco*</h2>
             <hr class="hr-1">
             <time>
             <h3>SATURDAY, JUNE 12, 2027</h3>
-            <P>DINNER AT 5PM</P>
+            <P>DINNER AT 5PM</P> 
+
+            <div style="width: 500px;"><iframe src="https://audio.com/embed/v2/audio/1860778884805757?theme=light&layout=fixed&cover=true&footer=true&author=true&watermark=true" style="display:block; border-radius: 1px; border: none; height: 235px; width: 500px;" loading="lazy" data-audiocom-embed></iframe><a href='https://audio.com/devin-jenkins' target="_blank" style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"></a></div><script src="https://audio.com/embed.js" async></script>
             </time>
-            <hr>
+            <div id="timer">
+<!-- 2. The JavaScript logic (placed below the div so the div loads first) -->
+<script>
+  // Grab the HTML element by its ID
+  const timerDisplay = document.getElementById("timer");
+
+  // Set your target end date and time (Format: "Month Day, Year HH:MM:SS")
+  const endTime = new Date("June 12, 2027 17:00:00").getTime();
+
+  function updateClock() {
+    // Get the current time in milliseconds
+    const now = new Date().getTime();
+
+    // Find the remaining time in milliseconds
+    const distance = endTime - now;
+
+    // Stop the timer if the end time has passed
+    if (distance <= 0) {
+      clearInterval(timerLoop);
+      timerDisplay.textContent = "00:00:00:00";
+      return;
+    }
+
+    // Math to convert milliseconds into days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Add a leading zero if a number is less than 10 (e.g., "5" becomes "05")
+    const formattedDays = String(days).padStart(2, "0");
+    const formattedHours = String(hours).padStart(2, "0");
+    const formattedMinutes = String(minutes).padStart(2, "0");
+    const formattedSeconds = String(seconds).padStart(2, "0");
+
+    // Push the formatted clock string into your HTML div
+    timerDisplay.textContent = `${formattedDays}:${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+  }
+
+  // Run the function every 1000 milliseconds (1 second)
+  const timerLoop = setInterval(updateClock, 1000);
+
+  // Run it once immediately so there isn't a 1-second blank delay on page load
+  updateClock();
+</script>
 </div>
 </time>
-<div id="address-VENUE">
-            <address><a href="https://www.kenmorecommunity.club/">7304 NE 175th St, Kenmore, WA 98028</a></address>
-            </div>
 
+<div id="address-VENUE">
+            <address><a href="https://www.kenmorecommunity.club/">7304 NE 175th St, Kenmore, WA 98028</a></address> </div>
+            <hr>
+</div>
             <div class="RSVP">
 <form action="https://api.web3forms.com/submit" method="POST">
+    <i>&#9993;</i>
     <h4>RSVP BY MAY 1, 2027</h4>
     <label for="attending">WILL YOU BE ATTENDING?</label>
     <select id="attending" name="attending"><option value="yes">YES</option><option value="no">NO</option><option value="maybe?">MAYBE?</option></select>
