@@ -6,147 +6,175 @@
         <title>Yaneli 18 nera</title>
     </head>
     <style>/* background-color: rgba(183, 223, 250, 0.849); */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaneli 18 nera</title>
+    <style>
+        /* Universal box-sizing prevents padding from making elements wider than the screen */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* background-color: rgba(183, 223, 250, 0.849); */
         body {
             background-image: url("Blue-background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            padding: 15px;
             text-align: center;
         }
-h2 {
-font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
-font-size: 80px;
-font-weight: normal;
-margin-block: 0px;
-}
 
-h1 {
-font-family: inherit;
-font-size: 50px;
-letter-spacing: 4px;
-margin-top: 45px;
- 
-}
- address a {
-    text-decoration: none;
-    color: inherit;
-    
-}
-.hr-1 {
-    border: none;
-background-color: rgba(0, 0, 0, 0.25);
-height: 1px;
-width: 270px;
-border-radius: 2px;
-}
-hr {
-border: none;
-background-color: rgba(0, 0, 0, 0.25);
-height: 1px;
-width: 140px;
-border-radius: 2px;
-}
-.Circle-pic {
-width: 450px;
-height: 450px;
-border-radius: 50%;
-object-fit: cover;
-}
-form {
-    gap: 9px;
-    display: flex;
-    flex-direction: column;
-    max-width: 340px;
-    margin: 0 auto;
-    font-family: inherit;
-border: none;
-border-radius: 12px;
-padding: 11px;
-text-transform: uppercase;
+        h2 {
+            font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
+            font-size: clamp(46px, 11vw, 80px);
+            font-weight: normal;
+            margin-block: 0px;
+        }
 
-background-color: rgb(171, 214, 233);<--blanchedalmond-->
-padding: 10px 15px;
+        h1 {
+            font-family: inherit;
+            font-size: clamp(28px, 7vw, 50px);
+            letter-spacing: clamp(2px, 0.8vw, 4px);
+            margin-top: 45px;
+        }
 
-10px 15px
-25px 30px;
-}
-button:hover {
+        address a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-cursor: pointer;
-}
-.new-line {
-        border: none;
-background-color: rgba(0, 0, 0, 0.25);
-height: 1px;
-width: 215px;
-border-radius: 2px;
-}
-.host{
-    font-family:'Snell Roundhand';
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 20px;
+        .hr-1 {
+            border: none;
+            background-color: rgba(0, 0, 0, 0.25);
+            height: 1px;
+            width: 270px;
+            max-width: 85%;
+            border-radius: 2px;
+        }
 
-}
-button {
-    color: #fffaf5;
-    font-weight: bold;
-    border-radius: 6px;
-    letter-spacing: 1.5px;
-    background-color: #8b1e24;
-    border: none;
-}
-select {
-    margin-bottom: 16px
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-family: inherit;
-       border: 1px solid black;
-       cursor: pointer;
-}
-input {
-    margin-bottom: 6px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    font-family: inherit;
-    border: 1px solid black;
-}
-h4 {
-    font-weight: bold;
-    font-family: inherit;
-    font-style: oblique;
-    font-size: 22px;
-}
-.RSVP {
-    margin-top: 30px;
+        hr {
+            border: none;
+            background-color: rgba(0, 0, 0, 0.25);
+            height: 1px;
+            width: 140px;
+            max-width: 60%;
+            border-radius: 2px;
+        }
 
+        .Circle-pic {
+            width: 85vw;
+            max-width: 450px;
+            aspect-ratio: 1 / 1;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-}
-i {
-    font-size: 80px;
-}
-h3 {
-    margin-top: 20px;
-    font-size: 95px;
-}
-time {
-    font-size: 50px;
-}
-address {
-    font-size: 50px;
-}
-iframe {
-    max-width: 600px;), and set margin: 0 auto;
-}
-p {
-    margin-top: -50px;
-}
-.hr-2 {
-width: 300px;
-}
-.timer {
-    font-size: 500px;
-}
-main {
-    color: white;
-}
+        form {
+            gap: 9px;
+            display: flex;
+            flex-direction: column;
+            width: 92%;
+            max-width: 340px;
+            margin: 0 auto;
+            font-family: inherit;
+            border: none;
+            border-radius: 12px;
+            padding: 15px;
+            text-transform: uppercase;
+            background-color: rgb(171, 214, 233); /* blanchedalmond */
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .new-line {
+            border: none;
+            background-color: rgba(0, 0, 0, 0.25);
+            height: 1px;
+            width: 215px;
+            max-width: 80%;
+            border-radius: 2px;
+        }
+
+        .host {
+            font-family: 'Snell Roundhand', cursive;
+            font-size: clamp(24px, 6vw, 40px);
+            text-transform: uppercase;
+            margin: 20px;
+        }
+
+        button {
+            color: #fffaf5;
+            font-weight: bold;
+            border-radius: 6px;
+            letter-spacing: 1.5px;
+            background-color: #8b1e24;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        select {
+            margin-bottom: 16px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 16px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        input {
+            margin-bottom: 6px;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 16px;
+            border: 1px solid black;
+        }
+
+        h4 {
+            font-weight: bold;
+            font-family: inherit;
+            font-style: oblique;
+            font-size: clamp(18px, 4.5vw, 22px);
+        }
+
+        .RSVP {
+            margin-top: 30px;
+        }
+
+        i {
+            font-size: clamp(46px, 11vw, 80px);
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-size: clamp(48px, 12vw, 95px);
+        }
+
+        time {
+            display: inline-block;
+            max-width: 100%;
+        }
+
+        /* Mobile-only spacing adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                margin-top: 25px;
+            }
+            .RSVP {
+                margin-top: 20px;
+            }
+        }
     </style>
     <body>
         <main class="invite-card">
