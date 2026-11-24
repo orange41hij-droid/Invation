@@ -6,175 +6,158 @@
         <title>Yaneli 18 nera</title>
     </head>
     <style>/* background-color: rgba(183, 223, 250, 0.849); */
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaneli 18 nera</title>
-    <style>
-        /* Universal box-sizing prevents padding from making elements wider than the screen */
-        * {
-            box-sizing: border-box;
-        }
-
-        /* background-color: rgba(183, 223, 250, 0.849); */
         body {
             background-image: url("Blue-background.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh;
-            margin: 0;
-            padding: 15px;
             text-align: center;
         }
+h2 {
+font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
+font-size: 80px;
+font-weight: normal;
+margin-block: 0px;
+}
 
-        h2 {
-            font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
-            font-size: clamp(46px, 11vw, 80px);
-            font-weight: normal;
-            margin-block: 0px;
-        }
+h1 {
+font-family: 'Times New Roman', Times, serif;
+font-size: 50px;
+letter-spacing: 4px;
+margin-top: 45px;
+ 
+}
+ address a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+.hr-1 {
+    border: none;
+background-color: rgb(179, 152, 4);/*background-color: rgba(0, 0, 0, 0.25);*/
+height: 1px;
+width: 270px;
+border-radius: 2px;
+}
+hr {
+border: none;
+background-color: rgb(179, 152, 4);/*background-color: rgba(0, 0, 0, 0.25);*/
+height: 1px;
+width: 140px;
+border-radius: 2px;
+}
+.Circle-pic {
+max-width: 450px;
+width: 100%;
+height: 450px;
+border-radius: 50%;
+object-fit: cover;
+}
+form {
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    margin: 0 auto;
+    font-family: inherit;
+border: none;
+border-radius: 12px;
+padding: 11px;
+text-transform: uppercase;
 
-        h1 {
-            font-family: inherit;
-            font-size: clamp(28px, 7vw, 50px);
-            letter-spacing: clamp(2px, 0.8vw, 4px);
-            margin-top: 45px;
-        }
+background-color: #f9f4e8;/*rgb(171, 214, 233);*//*blanchedalmond*/
+padding: 10px 15px;
 
-        address a {
-            text-decoration: none;
-            color: inherit;
-        }
+/*10px 15px*/
+/*25px 30px;*/
+}
+button:hover {
 
-        .hr-1 {
-            border: none;
-            background-color: rgba(0, 0, 0, 0.25);
-            height: 1px;
-            width: 270px;
-            max-width: 85%;
-            border-radius: 2px;
-        }
+cursor: pointer;
+}
+.new-line {
+        border: none;
+background-color: rgba(0, 0, 0, 0.25);
+height: 1px;
+max-width: 215px;
+width: 100%;
+border-radius: 2px;
+}
+.host{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 20px;
 
-        hr {
-            border: none;
-            background-color: rgba(0, 0, 0, 0.25);
-            height: 1px;
-            width: 140px;
-            max-width: 60%;
-            border-radius: 2px;
-        }
+}
+button {
+    color: #fffaf5;
+    font-weight: bold;
+    border-radius: 6px;
+    letter-spacing: 1.5px;
+    background-color: #8b1e24;
+    border: none;
+}
+select {
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: inherit;
+       border: 1px solid black;
+       cursor: pointer;
+}
+input {
+    margin-bottom: 6px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid black;
+}
+h4 {
+    font-weight: bold;
+    font-family: inherit;
+    font-style: oblique;
+    font-size: 22px;
+}
+.RSVP {
+    margin-top: 30px;
 
-        .Circle-pic {
-            width: 85vw;
-            max-width: 450px;
-            aspect-ratio: 1 / 1;
-            height: auto;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+}
+i {
+    font-size: 80px;
+}
+h3 {
+    font-size: 95px;
+    margin-bottom: 0;
+}
+time {
+    
+    font-size: 50px;
+}
+address {
 
-        form {
-            gap: 9px;
-            display: flex;
-            flex-direction: column;
-            width: 92%;
-            max-width: 340px;
-            margin: 0 auto;
-            font-family: inherit;
-            border: none;
-            border-radius: 12px;
-            padding: 15px;
-            text-transform: uppercase;
-            background-color: rgb(171, 214, 233); /* blanchedalmond */
-        }
-
-        button:hover {
-            cursor: pointer;
-        }
-
-        .new-line {
-            border: none;
-            background-color: rgba(0, 0, 0, 0.25);
-            height: 1px;
-            width: 215px;
-            max-width: 80%;
-            border-radius: 2px;
-        }
-
-        .host {
-            font-family: 'Snell Roundhand', cursive;
-            font-size: clamp(24px, 6vw, 40px);
-            text-transform: uppercase;
-            margin: 20px;
-        }
-
-        button {
-            color: #fffaf5;
-            font-weight: bold;
-            border-radius: 6px;
-            letter-spacing: 1.5px;
-            background-color: #8b1e24;
-            border: none;
-            padding: 12px;
-            font-size: 16px;
-        }
-
-        select {
-            margin-bottom: 16px;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 16px;
-            border: 1px solid black;
-            cursor: pointer;
-        }
-
-        input {
-            margin-bottom: 6px;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 16px;
-            border: 1px solid black;
-        }
-
-        h4 {
-            font-weight: bold;
-            font-family: inherit;
-            font-style: oblique;
-            font-size: clamp(18px, 4.5vw, 22px);
-        }
-
-        .RSVP {
-            margin-top: 30px;
-        }
-
-        i {
-            font-size: clamp(46px, 11vw, 80px);
-        }
-
-        h3 {
-            margin-top: 20px;
-            font-size: clamp(48px, 12vw, 95px);
-        }
-
-        time {
-            display: inline-block;
-            max-width: 100%;
-        }
-
-        /* Mobile-only spacing adjustments */
-        @media (max-width: 600px) {
-            h1 {
-                margin-top: 25px;
-            }
-            .RSVP {
-                margin-top: 20px;
-            }
-        }
+    font-size: 50px;
+}
+iframe {
+    margin-left: 1300px;
+    position: relative;
+}
+p {
+    margin-top: -50px;
+}
+.hr-2 {
+    background-color: rgb(179, 152, 4);
+width: 300px;
+}
+#timer {
+    margin-top: -220px;
+    line-height: 1;
+    font-size: 100px;
+}
+main {
+    color: white;
+    text-shadow: 0px 2px 10px rgb(0, 0, 0, 0.95), 0px 0px 20px rgba(5, 15, 45, 0.9);
+}
+.thing {
+visibility: hidden;
+}
     </style>
     <body>
         <main class="invite-card">
@@ -184,11 +167,12 @@
             <hr class="hr-1">
             <time>
             <h3>SATURDAY, JUNE 12, 2027</h3>
-            <P>DINNER AT 5PM</P> 
-
-            <div style="width: 500px;"><iframe src="https://audio.com/embed/v2/audio/1860778884805757?theme=light&layout=fixed&cover=true&footer=true&author=true&watermark=true" style="display:block; border-radius: 1px; border: none; height: 235px; width: 500px;" loading="lazy" data-audiocom-embed></iframe><a href='https://audio.com/devin-jenkins' target="_blank" style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"></a></div><script src="https://audio.com/embed.js" async></script>
             </time>
-            <div id="timer">
+           
+            
+            <div class="thing" style="width: 500px;"><iframe src="https://audio.com/embed/v2/audio/1860778884805757?theme=light&layout=fixed&cover=true&footer=true&author=true&watermark=true" frameborder="0" style="display:block; border-radius: 1px; border: none; height: 235px; width: 500px;" loading="lazy" data-audiocom-embed></iframe><a href='https://audio.com/devin-jenkins' target="_blank" style="text-align: center; display: block; color: #A4ABB6; font-size: 12px; font-family: sans-serif; line-height: 16px; margin-top: 8px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"></a></div><script src="https://audio.com/embed.js" async></script>
+</div>
+    <div id="timer">
 <!-- 2. The JavaScript logic (placed below the div so the div loads first) -->
 <script>
   // Grab the HTML element by its ID
@@ -233,9 +217,7 @@
   // Run it once immediately so there isn't a 1-second blank delay on page load
   updateClock();
 </script>
-</div>
-</time>
-
+   </div>
 <div id="address-VENUE">
             <address><a href="https://www.kenmorecommunity.club/">7304 NE 175th St, Kenmore, WA 98028</a></address> </div>
             <hr>
