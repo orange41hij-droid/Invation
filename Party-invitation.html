@@ -151,7 +151,7 @@ p {
 width: 300px;
 }
 #timer {
-    margin-top: -220px auto;
+    margin-top: -220px ;
     line-height: 1;
     font-size: 100px;
 }
@@ -162,6 +162,13 @@ main {
 .thing {
 visibility: hidden;
 }
+
+@media (max-width: 768px) {
+  #timer {
+    margin-top: 20px; /* Change this number until it sits right where you want on mobile */
+  }
+}
+
     </style>
     <body>
         <main class="invite-card">
