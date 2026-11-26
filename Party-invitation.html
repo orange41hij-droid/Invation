@@ -175,9 +175,15 @@ footer {
 font-size: clamp(24px, 8vw, 50px);
 }
     #LOCATION {
-        font-size: clamp(26px, 6vw, 55px);
-        font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
-        font-weight: bold;
+        font-size: clamp(26px, 10vw, 80px);
+       font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
+       margin: 0 auto;
+       color: #77560a;
+
+    }
+    .Location-section {
+  
+        backdrop-filter: blur(8px);
     }
     </style>
     </head>
@@ -238,10 +244,12 @@ font-size: clamp(24px, 8vw, 50px);
 </script>
    </div>
       <hr class="hr-thing">
-      <p id="LOCATION">LOCATION</p>
+      <div class="Location-section">
+      <p id="LOCATION">Location</p>
 <div id="address-VENUE">
             <address><a href="https://www.kenmorecommunity.club/">7304 NE 175th St, Kenmore, WA 98028</a></address> </div>
             <hr>
+            </div>
 </div>
             <div class="RSVP">
 <form action="https://api.web3forms.com/submit" method="POST">
