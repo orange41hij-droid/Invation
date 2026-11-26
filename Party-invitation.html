@@ -7,12 +7,13 @@
     <style>/* background-color: rgba(183, 223, 250, 0.849); */
         body {
             background-image: url("Blue-background.jpg");
+            background-attachment: fixed;
             text-align: center;
             min-height: 100dvh;
         }
 h2 {
 font-family: 'Edwardian Script ITC', 'Snell Roundhand', 'Brush Script MT', cursive;
-font-size: clamp(32px, 8vw, 100px);
+font-size: clamp(32px, 10vw, 100px);
 font-weight: normal;
 margin-block: 0px;
 }
@@ -46,14 +47,6 @@ max-width: 140px;
 border-radius: 2px;
 }
 .hr-thing {
-    border: none;
-background-color: rgb(179, 152, 4);/*background-color: rgba(0, 0, 0, 0.25);*/
-height: 1px;
-width: 130px;
-max-width: 140px;
-border-radius: 2px;
-}
-.best-hr {
     border: none;
 background-color: rgb(179, 152, 4);/*background-color: rgba(0, 0, 0, 0.25);*/
 height: 1px;
@@ -167,6 +160,7 @@ max-width: 300px;
 width: 100%;
 }
 #timer {
+        color: rgb(238, 164, 26);
     margin-top: 15px;
     line-height: 1;
 font-size: clamp(32px, 8vw, 100px);
@@ -186,8 +180,8 @@ main {
             <hr class="hr-1">
             <time>
             <h3>SATURDAY, JUNE 12, 2027</h3>
-            </time>
-             <hr class="hr-thing">
+            </time>    
+   <hr class="hr-thing">
     <div id="timer">
 <!-- 2. The JavaScript logic (placed below the div so the div loads first) -->
 <script>
@@ -234,6 +228,7 @@ main {
   updateClock();
 </script>
    </div>
+      <hr class="hr-thing">
 <div id="address-VENUE">
             <address><a href="https://www.kenmorecommunity.club/">7304 NE 175th St, Kenmore, WA 98028</a></address> </div>
             <hr>
